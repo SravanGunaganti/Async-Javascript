@@ -13,7 +13,7 @@ Each method fetches posts from an API and dynamically displays them on the webpa
 ## **Technologies Used**
 
 * **Frontend:** HTML, CSS, JavaScript  
-* **API:** [DummyJSON](https://dummyjson.com) for fetching posts  
+* **API:** [DummyJSON](https://dummyjson.com/posts) for fetching posts  
 * **Styles:** Custom CSS for UI elements
 
 ## **Project Structure**
@@ -104,7 +104,7 @@ Each method fetches posts from an API and dynamically displays them on the webpa
 
 ## **Project Links**
 
-* **Live Project:**   
+* **Live Project:** [https://async-javascript.netlify.app/](https://async-javascript.netlify.app/)  
 * **GitHub Repository:** [https://github.com/SravanGunaganti/Async-Javascript.git](https://github.com/SravanGunaganti/Async-Javascript.git)
 
 ## **Conclusion**
