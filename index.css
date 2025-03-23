@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Afacad Flux";
+}
+
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(187, 195, 226);
+  height: 100vh;
+  display: grid;
+  scrollbar-width: none;
+  grid-template-rows: 67px auto;
+}
+
+/* Header Styling */
+
+header {
+  background-color: aliceblue;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(206, 212, 235);
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s linear;
+  font-size: 14px;
+}
+a:hover,
+a:active {
+  background-color: rgb(46, 134, 206);
+  color: white;
+}
+
+/* Homepage Styling */
+
+main {
+  text-align: center;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#home {
+  background-color: aliceblue;
+  padding: 16px;
+  margin: auto;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  max-width: 800px;
+}
+#home h1 {
+  font-size: 30px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+button {
+  background-color: rgb(27, 78, 180);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 32px;
+  width: fit-content;
+  margin: auto;
+  font-size: 16px;
+  transition: all 0.3s linear;
+  margin-bottom: 32px;
+}
+button:hover {
+  background-color: rgb(3, 50, 117);
+
+  scale: 1.1;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+  margin: auto;
+  justify-content: center;
+  text-align: left;
+  flex-wrap: wrap;
+  align-items: start;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 420px;
+  margin-inline-end: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 167px;
+  transition: all 0.5s linear;
+  color: black;
+}
+
+.card:hover {
+  background: rgb(3, 50, 117);
+}
+.content-height {
+  max-height: fit-content;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.body {
+  font-size: 16px;
+  display: inline;
+}
+.card:hover .title {
+  color: aqua;
+}
+.card:hover .body {
+  color: white;
+}
+.toggle-btn span {
+  font-size: 16px;
+  background-color: transparent;
+  text-decoration: none;
+}
+.toggle-btn {
+  text-wrap: nowrap;
+  color: rgb(250, 45, 79);
+  font-weight: bold;
+  cursor: default;
+  background-color: transparent;
+  margin-left: 4px;
+  font-size: small;
+  border-bottom: 2px solid rgb(250, 45, 79);
+}
+.tags {
+  font-size: 14px;
+  color: #777;
+}
+.stats {
+  margin-top: 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.likes {
+  color: green;
+}
+.dislikes {
+  color: red;
+}
+.views {
+  color: #555;
+}
+
+.hide-loader {
+  display: none;
+}
+.display-loader {
+  display: grid;
+  grid-template-columns: 40px auto;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background-color: aliceblue;
+  padding: 32px;
+  margin: auto;
+  border-radius: 8px;
+}
+.display-loader p {
+  text-wrap: wrap;
+  text-align: left;
+  width: fit-content;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid coral;
+  border-left: 4px solid transparent;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.error {
+  background-color: red;
+  color: white;
+  height: 40px;
+  width: 40px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    max-height: fit-content;
+  }
+}
